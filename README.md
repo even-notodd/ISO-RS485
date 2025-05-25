@@ -10,6 +10,7 @@ The main features:
 - **Switchable levels.** UART levels can be choosen between 3.3 and 5V (with a jumper).
 - **RS485 autodirection.** Additional transistor in this circuit makes RS485 transceiver switching between Transmit/Receive state automatically.
 - **Indication:** 3 LEDs for Rx Tx and isolated power
+- **Driver:** Converter is built using CH340G IC. Driver is available on [manufacturer's website](https://www.wch-ic.com/products/CH340.html).
 
 ![image](IMG/TOP.jpg)
 
