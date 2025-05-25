@@ -12,7 +12,6 @@ The main features:
 - **Indication** 3 LEDs for Rx Tx and isolated power
 
 ![image](IMG/TOP.jpg)
-![image](IMG/BOTTOM.jpg)
 
 ## License
 This project is licensed under:
