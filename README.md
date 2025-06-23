@@ -1,4 +1,5 @@
 # ISO-RS485
+## This is work in progress, not finished project (!)
 USB to RS485 and UART converter with galvanic isolation.
 This is one of tools for "everyday use" once you are in embedded.
 Regardless variety of cheap USB-RS485 and USB-UART "whistles" on the market and on the web, they rarely meet our expectations.
