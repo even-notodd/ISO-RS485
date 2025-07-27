@@ -6,8 +6,7 @@ Regardless variety of cheap USB-RS485 and USB-UART "whistles" on the market and 
 Surprisingly, after many years in electronics, I still don't have a completely satisfying USB-UART and USB-RS485 tools.
 So this repo contains an iterative attempt to design a tool for my own use basing on my user experience.
 
-![image](IMG/FT230-Top.jpg)
-![image](IMG/FT230-Bottom.jpg)
+![image](IMG/Schematics.jpg)
 
 ## The main features:
 - **USB-C connector.** Yes, whistles don't need USB cables but they are always near your USB port instead of being near your target hardware. So you always need long Rx/Tx/Gnd or A/B wires or some USB HUB on the desk. While it seems more natural to use generic USB-C cable which you can find everywhere currently (e.g. phone charger) and use some jumper cables etc. on serial side.
@@ -16,6 +15,9 @@ So this repo contains an iterative attempt to design a tool for my own use basin
 - **Switchable levels.** 3.3/5V is typical levels choice for USB-UART converters. Nevertheless, sometimes we work with projects where 1.8V UART levels are nevessery and I faced lack of that feature. Thus the levels here can be choosen among 1.8, 3.3 and 5V (with a jumper).
 - **RS485 autodirection.** In current version is handled by FT230.
 - **Indication:** 3 LEDs for Rx Tx and isolated power
+
+![image](IMG/FT230-Top.jpg)
+![image](IMG/FT230-Bottom.jpg)
 
 ## Versions history
 ** Initially ** there were 2 similar designs in parallel: based on FT230 and CH340G.I used CH340 in several devices before and didn't face any issues with them (at least on low baud rates). Nevertheless, its availability is questionable and receiving parts from LCSC is often problematic, while I wanted the device to be reproducable with one-stop order from big suppliers like Mouser or Digikey. Also I don't like CH340 drivers distribution as well as documentation. Its price makes it really attractive for DIY or projects where cost optimization is important but my personal feeling is the chip is immature for commercial projects or open source.So CH340 version was excluded from further development and is extinct by now.
