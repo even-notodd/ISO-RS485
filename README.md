@@ -6,6 +6,9 @@ Regardless variety of cheap USB-RS485 and USB-UART "whistles" on the market and 
 Surprisingly, after many years in electronics, I still don't have a completely satisfying USB-UART and USB-RS485 tools.
 So this repo contains an iterative attempt to design a tool for my own use basing on my user experience.
 
+![image](IMG/FT230-Top.jpg)
+![image](IMG/FT230-Bottom.jpg)
+
 ## The main features:
 - **USB-C connector.** Yes, whistles don't need USB cables but they are always near your USB port instead of being near your target hardware. So you always need long Rx/Tx/Gnd or A/B wires or some USB HUB on the desk. While it seems more natural to use generic USB-C cable which you can find everywhere currently (e.g. phone charger) and use some jumper cables etc. on serial side.
 - **UART & RS485: both in one.** Yes, there are separate converters but I use both UART and RS485 quite frequently - so why not have them together in one device?
