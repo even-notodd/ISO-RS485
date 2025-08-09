@@ -27,6 +27,12 @@ Optical isolation was applied for data lines in that first version. And it was a
 ## Driver
 FTDI FT230 driver is available on [manufacturer's website](https://ftdichip.com/drivers/).
 
+## Assembly & Configuration
+When using a new FT230 chip, default assignment of CBUS0...CBUS must be reconfigured first in MTP memory (as there is some mismatch between datasheet and actual values). For that purpose use [FT_PROG software from FTDI](https://ftdichip.com/utilities/): 
+Devices -> Scan and Parse -> CBUS signals. Then assign CBUS according to schematics.
+
+![image](IMG/FT_PROG.png)
+
 ## License
 This project is licensed under:
 - **Hardware (KiCad design files)**: Licensed under **CERN-OHL-W-2.0**, which allows modification and commercial use with attribution.
