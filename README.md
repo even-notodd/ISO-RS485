@@ -1,11 +1,13 @@
 # ISO-RS485
-## This version is tested and works ok.
-![image](IMG/photo.png)
-USB to RS485 and UART converter with isolation.
+## USB to RS485 and UART converter with isolation.
 This is one of tools for "everyday use" once you are in embedded.
 Regardless variety of cheap USB-RS485 and USB-UART "whistles" on the market and on the web, they rarely meet our expectations. There are very cheap and quite limited converters and on the other side of spectrum there are good converters usually not affordable for individuals.
 Surprisingly, after many years in electronics, I still don't have a completely satisfying USB-UART and USB-RS485 tools.
 So this repo contains an iterative attempt to design a tool for my own use basing on my user experience.
+
+![image](IMG/photo.png)
+
+This version is tested and works ok.
 
 ![image](IMG/Schematics.jpg)
 
