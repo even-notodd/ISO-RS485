@@ -20,9 +20,6 @@ This version is tested and works ok.
 - **RS485 autodirection.** In current version is handled by FT230.
 - **Indication:** 3 LEDs for Rx Tx and isolated power
 
-![image](IMG/FT230-Top.jpg)
-![image](IMG/FT230-Bottom.jpg)
-
 ## Versions history
 ** Initially ** there were 2 similar designs in parallel: based on FT230 and CH340G.I used CH340 in several devices before and didn't face any issues with them (at least on low baud rates). Nevertheless, its availability is questionable and receiving parts from LCSC is often problematic, while I wanted the device to be reproduceable with one-stop order from big suppliers like Mouser or Digikey. Also I don't like CH340 drivers distribution as well as documentation. Its price makes it really attractive for DIY or projects where cost optimization is important but my personal feeling is the chip is immature for commercial projects or open source. So CH340 version was excluded from further development and is extinct by now.
 Optical isolation was applied for data lines in that first version. And it was a wrong decision. I assembled one piece to have a look, the optocouplers expectedly limited the speed and I found the shape of signal completely dissatisfying. There was an option to use better optocouplers and correct the circuit but by that time I wanted to add 1.8V levels and to make signal looking better. So I decided to get rid of optical isolation shifting to isolated level shifter for UART.
